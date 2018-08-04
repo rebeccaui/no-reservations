@@ -48,7 +48,7 @@
           // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
           searchedReservation = searchedReservation.replace(/\s+/g, "").toLowerCase();
     
-          $.get("/api/tables/" + searchedReservation, function(data) {
+          $.get("/api/waitlist/" + searchedReservation, function(data) {
             console.log(data);
             if (data) {
               $("#stats").show();
